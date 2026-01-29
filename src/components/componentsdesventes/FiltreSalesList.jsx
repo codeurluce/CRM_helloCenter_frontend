@@ -636,10 +636,10 @@ const FiltreSalesList = ({
                                     confirmButtonText: "Oui, auditer",
                                     cancelButtonText: "Fermer",
                                     inputValidator: (value) => {
-                                      if (!value) return "Vous devez saisir un commentaire !";
+                                      // if (!value) return "Vous devez saisir un commentaire !";
                                     },
                                   });
-                                  if (audite_commentaire) {
+                                  if (audite_commentaire !== undefined) {
                                     try {
                                       await onAuditeSale(sale.id, true, audite_commentaire); // envoyer le commentaire au backend
                                       Swal.fire(

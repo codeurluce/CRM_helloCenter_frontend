@@ -49,4 +49,5 @@ export const PREDEFINED_TAGS = [
   'Faux Numéro (FN)',
   'Relance (RL)',
   'Hors Cible',
+  'Contact Argumenté (CA)',
 ];
